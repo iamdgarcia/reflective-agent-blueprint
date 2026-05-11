@@ -51,6 +51,8 @@ https://YOUR-SITE-NAME.netlify.app/.netlify/functions/reflective-agent
 
 ## Course Connection
 
+📚 **[Course Repository](https://github.com/iamdgarcia/tlc_agents_training)** — Access the full Agentic AI for Beginners course materials
+
 - **Module 3.2: Reflection and Self-Correction**
 
 ---
