@@ -1,0 +1,28 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background-color: #f4f4f4; }
+.container { max-width: 800px; margin: 0 auto; padding: 20px; }
+header { text-align: center; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
+header h1 { color: #2c3e50; margin-bottom: 10px; }
+header p { color: #7f8c8d; }
+#chat-container { display: flex; flex-direction: column; height: 350px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden; }
+.chat-messages { flex: 1; padding: 20px; overflow-y: auto; }
+.message { margin-bottom: 15px; max-width: 80%; }
+.message.user { align-self: flex-end; background-color: #3498db; color: white; padding: 10px 15px; border-radius: 18px 18px 0 18px; }
+.message.assistant { align-self: flex-start; background-color: #ecf0f1; color: #333; padding: 10px 15px; border-radius: 18px 18px 18px 0; }
+.message-content { margin-bottom: 5px; white-space: pre-wrap; font-size: 0.95em; }
+.message-time { font-size: 0.75em; opacity: 0.7; }
+#chat-input-container { display: flex; padding: 15px; background-color: #f8f9fa; border-top: 1px solid #eee; }
+#user-input { flex: 1; padding: 12px 15px; border: 1px solid #ddd; border-radius: 20px; font-size: 16px; outline: none; }
+#user-input:focus { border-color: #3498db; }
+#send-button { margin-left: 10px; padding: 0 20px; background-color: #3498db; color: white; border: none; border-radius: 20px; cursor: pointer; font-size: 16px; }
+.iteration-panel { margin-top: 20px; background: white; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.iteration-panel h3 { margin: 0; padding: 15px 20px; background-color: #fdebd0; border-bottom: 1px solid #eee; color: #2c3e50; }
+#iterations-list { padding: 15px; max-height: 200px; overflow-y: auto; }
+.iteration-item { padding: 12px; margin-bottom: 10px; border-left: 3px solid #e67e22; background-color: #fdfefe; border-radius: 4px; }
+.iteration-header { font-weight: bold; color: #e67e22; margin-bottom: 8px; }
+.score-badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.8em; margin-left: 10px; }
+.score-high { background: #d5f5e3; color: #27ae60; }
+.score-medium { background: #fdebd0; color: #f39c12; }
+.score-low { background: #fadbd8; color: #e74c3c; }
+.iteration-issues { font-size: 0.85em; color: #7f8c8d; margin-top: 6px; }
+@media (max-width: 600px) { .container { padding: 10px; } }
